@@ -1,27 +1,30 @@
-# Picsearch
+# Angular app that uses Flickr API to search for photos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
+This is an Angular project showcasing a simple photo lookup using a public Flickr API.
 
-## Development server
+![](demo.gif)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+More information about Flickr API:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+https://www.flickr.com/services/api/
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+In the project folder, type:
+```
+npm install
+```
 
-## Running unit tests
+You need to create a Flickr account and get your API key.
+That key has to be set inside environment/environment.ts file.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
 
-## Running end-to-end tests
+In the project folder, type:
+```
+ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Then open your browser and go to:
+http://localhost:4200/
