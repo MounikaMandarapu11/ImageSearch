@@ -1,23 +1,26 @@
 <div class="container">
-  <h1 class="text-center">Image Search Using Flickr API</h1>
+  <h1 class="text-center">Image Search Using Flickr API</h1> 
+
   <div class="form-group">
     <input type="search" class="form-control" (keyup)="search($event)" placeholder="Search images">
   </div>
 
   <div class="row">
-    <div class="col-sm-12 col-md-6 col-lg-4 p-3" *ngFor="let image of images">
+    <div class="col-sm-12 col-md-6 col-lg-4 p-3" *ngFor="let image of images; let i = index" >
       <div class="card">
-        <a href="{{image.url}}_b.jpg">
-          <img src="{{image.url}}_m.jpg" title="{{image.title}}">
+        <a href="{{image.url}}_b.jpg" target="_blank">
+          <img id="flickr_img" src="{{image.url}}_m.jpg" title="{{image.title}}" >
         </a>
+          <p>"{{image.title}}"</p>
       </div>
     </div>
   </div>
-  <div
-    class="search-results"
+  <div class="search-results"
     infiniteScroll
     [infiniteScrollDistance]="2"
     [infiniteScrollThrottle]="50"
     (scrolled)="onScroll()">
   </div>
+  
 </div>
+
