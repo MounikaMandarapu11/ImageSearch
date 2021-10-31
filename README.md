@@ -1,9 +1,6 @@
-# Angular app that uses Flickr API to search for photos
+# Angular web application helps to search photo based on User Input
 
 This is an Angular project showcasing a simple photo lookup using a public Flickr API.
-
-![](demo.gif)
-
 
 More information about Flickr API:
 
@@ -28,3 +25,7 @@ ng serve
 
 Then open your browser and go to:
 http://localhost:4200/
+
+
+
+
